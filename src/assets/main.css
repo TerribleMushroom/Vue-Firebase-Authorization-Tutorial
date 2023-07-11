@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-sora bg-night text-cream;
+}
+nav {
+  @apply p-8 text-lg uppercase flex flex-row items-center justify-between [&>div>a]:mr-5 font-bold;
+}
+
+button {
+  @apply uppercase px-4 py-2 bg-orange rounded-lg shadow-lg shadow-orange/20 hover:shadow-lg hover:shadow-orange/40 transition-shadow duration-500;
+}
+
+a:hover {
+  @apply underline;
+}
+
+h1 {
+  @apply text-5xl font-bold text-center mt-16;
+}
+h2 {
+  @apply text-5xl font-bold text-center mt-4;
+}
+.profile {
+  @apply flex flex-row items-center gap-8 mx-auto w-fit mt-10;
+}
+.profile-pic {
+  @apply w-28;
+}
+.profile h3 {
+  @apply text-2xl font-bold;
+}
+img {
+  @apply mx-auto;
+}
